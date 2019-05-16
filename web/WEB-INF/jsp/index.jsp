@@ -21,8 +21,8 @@
         <script>
             $(document).ready(function () {
                 //alert("AAA");
-                
-                
+
+
             });
         </script>
 
@@ -80,9 +80,9 @@
                 <a href="consultas.htm?opcion=cargar">Consultas</a>
             </li>
 
-<!--            <li>
-                <a href="#">Preinscripciones</a>
-            </li>-->
+            <!--            <li>
+                            <a href="#">Preinscripciones</a>
+                        </li>-->
         </ul>
     </nav>
 
@@ -105,8 +105,7 @@
                         <img src="imagenes/aulas-3-0.jpg" alt="Aula con equipamiento informático">
                     </figure>
 
-                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Intel Core i7 8700 en Asus B150-C
-                        y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
+                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación.</p>
                     <p>
                         <a href="#" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" data-target="#modalAulas">Más información</a>
                         <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">-->
@@ -119,8 +118,7 @@
                     <figure>
                         <img src="imagenes/laboratorio-ideas.jpg" alt="Reunión en Laboratorio de ideas">
                     </figure>
-                    <p>Como alumno de Graphic Institute puedes formar parte de uno de nuestros laboratorios de ideas. En ellos se persigue
-                        desarrollar una idea novedosa y por qué no, si es posible comercializarla obteniendo un beneficio económico.</p>
+                    <p>Como alumno de Graphic Institute puedes formar parte de uno de nuestros laboratorios de ideas.</p>
                     <p>
                         <a href="#" title="Más información sobre el Laboratorio de ideas" data-toggle="modal" data-target="#modalIdeas">Más información</a>
                         <!--<a href="#" title="Más información sobre el Laboratorio de ideas">Más información</a>-->
@@ -143,11 +141,10 @@
                         <img src="imagenes/practicas.jpg" alt="Aula con equipamiento informático">
                     </figure>
 
-                    <p>Todos nuestros alumnos pueden acceder a las prácticas en empresas. Tenemos acuerdos con las muchas empresas del
-                        sector publicitario, audiovisual, diseño, para completar tu formación.</p>
+                    <p>Todos nuestros alumnos pueden acceder a las prácticas en empresas.</p>
                     <p>
                         <a href="#" title="Más información sobre las prácticas garantizadas" data-toggle="modal" data-target="#modalPracticas">Más información</a>
-                        
+
                     </p>
                 </div>
 
@@ -160,8 +157,7 @@
                     </figure>
 
 
-                    <p>Nuestro profesorado está contrastado y avalado por los resultados obtenidos con miles de alumnos, desde 2002.
-                        Su objetivo es capacitar al alumno para trabajar con las nuevas tecnologías.</p>
+                    <p>Nuestro profesorado está contrastado y avalado.</p>
                     <p>
                         <a href="#" title="Más información sobre el profesorado" data-toggle="modal" data-target="#modalProfesores">Más información</a>
                         <!--<a href="#" title="Más información sobre las metodología">Más información</a>-->
@@ -177,7 +173,7 @@
         <!-- Sección cursos-->
 
         <section class="Cursos">
-            <h1>Nuestros cursos de diseño<br><span> gráfico y publicidad</span></h1>
+            <h1>Oferta de cursos<br><span>con descuentos</span></h1>
             <p>Elige uno de nuestros cursos especializados en diseño y lánzate a un apasionante mundo profesional dentro del sector audiovisual y publicitario</p>
 
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
@@ -287,7 +283,7 @@
 
     </footer>	
 
-    <!-- Modal -->
+    <!-- Modal Aulas-->
     <div id="modalAulas" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Contenido del modal -->
@@ -296,19 +292,19 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body" style="padding-left: 25px">
-                    <h2 style="color: #1ABC9C;">Aulas 3.0</h2>
-                    <p style="color: #1ABC9C;">8 aulas informáticas + 2 aulas blancas</p>
+                    <h2 id="tituloModal" name="tituloModal" style="color: #1ABC9C;">Aulas 3.0</h2>
+                    <p  id="subtituloModal" name="subtituloModal" style="color: #1ABC9C;">8 aulas informáticas + 2 aulas blancas</p>
                     <figure>
-                        <img src="imagenes/aula.jpg" alt="Aula con equipamiento informático" style="border-radius: 80px 20px 80px 0; margin-bottom: 15px">
+                        <img id="imagenModal" name="imagenModal" src="imagenes/aula.jpg" alt="Aula con equipamiento informático" style="border-radius: 80px 20px 80px 0; margin-bottom: 15px">
                     </figure>
 
-                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Apple Mac Pro Quad-Core y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
-                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Apple Mac Pro Quad-Core y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
-                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Apple Mac Pro Quad-Core y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
-
+                    <p id="textoModal" name="textoModal">Todas nuestras aulas disfrutan de equipamiento informático de última generación con Intel Core i7 8700 en Asus B150-C
+                        y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>                    
+                </div>
             </div>
         </div>
     </div>
