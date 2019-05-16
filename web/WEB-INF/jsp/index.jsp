@@ -20,7 +20,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
-                alert("AAAa");
+                //alert("AAA");
+                
+                
             });
         </script>
 
@@ -34,8 +36,8 @@
             </div>
 
             <h1>
-                <span>Formación en diseño gráfico, publicidad</span> <br>
-                <span>y nuevas tecnologías de la información</span>
+                <span>Formación en desarrollo web, diseño gráfico, programación, </span> <br>
+                <span>idiomas y nuevas tecnologías de la información</span>
             </h1>
 
             <!-- redes sociales -->
@@ -59,28 +61,28 @@
             </li>
 
             <li>
+                <a href="#">Desarrollo web</a>
+            </li>
+
+            <li>
                 <a href="#">Diseño gráfico</a>
             </li>
 
             <li>
-                <a href="#">Video y sonido</a>
+                <a href="#">Programación</a>
             </li>
 
             <li>
-                <a href="#">Publicidad y creatividad</a>
-            </li>
-
-            <li>
-                <a href="#">Talleres</a>
+                <a href="#">Idiomas</a>
             </li>
 
             <li>
                 <a href="consultas.htm?opcion=cargar">Consultas</a>
             </li>
 
-            <li>
+<!--            <li>
                 <a href="#">Preinscripciones</a>
-            </li>
+            </li>-->
         </ul>
     </nav>
 
@@ -92,7 +94,7 @@
         <section class="DatosCentro">
             <h1>Mucho más que un gran <br><span>centro de formación</span></h1>
 
-            <p>Graphic Institute es un centro de formación de referencia en el mundo del diseño. Aportamos multitud de herramientas para que al finalizar tus estudios consigas cumplir tus sueños profesionales.</p>
+            <p>Aula VIP es un centro de formación de referencia en el mundo del diseño. Aportamos multitud de herramientas para que al finalizar tus estudios consigas cumplir tus sueños profesionales.</p>
 
             <!-- Lo siguiente es una fila de contenido con 2 columnas dentro -->
             <div class="Fila">	
@@ -103,9 +105,10 @@
                         <img src="imagenes/aulas-3-0.jpg" alt="Aula con equipamiento informático">
                     </figure>
 
-                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Apple Mac Pro Quad-Core y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
+                    <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación con Intel Core i7 8700 en Asus B150-C
+                        y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
                     <p>
-                        <a href="#" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" data-target="#miModal">Más información</a>
+                        <a href="#" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" data-target="#modalAulas">Más información</a>
                         <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">-->
                     </p>
                 </div>
@@ -116,9 +119,11 @@
                     <figure>
                         <img src="imagenes/laboratorio-ideas.jpg" alt="Reunión en Laboratorio de ideas">
                     </figure>
-                    <p>Como alumno de Graphic Institute puedes formar parte de uno de nuestros laboratorios de ideas. En ellos se persigue desarrollar una idea novedosa y por qué no, si es posible comercializarla obteniendo un beneficio económico.</p>
+                    <p>Como alumno de Graphic Institute puedes formar parte de uno de nuestros laboratorios de ideas. En ellos se persigue
+                        desarrollar una idea novedosa y por qué no, si es posible comercializarla obteniendo un beneficio económico.</p>
                     <p>
-                        <a href="#" title="Más información sobre el Laboratorio de ideas">Más información</a>
+                        <a href="#" title="Más información sobre el Laboratorio de ideas" data-toggle="modal" data-target="#modalIdeas">Más información</a>
+                        <!--<a href="#" title="Más información sobre el Laboratorio de ideas">Más información</a>-->
                     </p>
                 </div>
 
@@ -138,24 +143,28 @@
                         <img src="imagenes/practicas.jpg" alt="Aula con equipamiento informático">
                     </figure>
 
-                    <p>Todos nuestros alumnos pueden acceder a las prácticas en empresas. Tenemos acuerdos con las muchas empresas del sector publicitario, audiovisual, diseño, para completar tu formación.</p>
+                    <p>Todos nuestros alumnos pueden acceder a las prácticas en empresas. Tenemos acuerdos con las muchas empresas del
+                        sector publicitario, audiovisual, diseño, para completar tu formación.</p>
                     <p>
-                        <a href="#" title="Más información sobre las prácticas garantizadas">Más información</a>
+                        <a href="#" title="Más información sobre las prácticas garantizadas" data-toggle="modal" data-target="#modalPracticas">Más información</a>
+                        
                     </p>
                 </div>
 
                 <div class="Columna">
-                    <h2>Metodología </h2>
-                    <p>Nos avala el éxito de miles de alumnos</p>
+                    <h2>Profesorado </h2>
+                    <p>De la máxima solvencia y años de experiencia</p>
 
                     <figure>
                         <img src="imagenes/metodologia.jpg" alt="Aula con equipamiento informático">
                     </figure>
 
 
-                    <p>Nuestra metodología está contrastada y avalada por los resultados obtenidos con miles de alumnos, desde 2002. Nuestro objetivo es capacitar al alumno para trabajar con nuevas nuevas tecnologías.</p>
+                    <p>Nuestro profesorado está contrastado y avalado por los resultados obtenidos con miles de alumnos, desde 2002.
+                        Su objetivo es capacitar al alumno para trabajar con las nuevas tecnologías.</p>
                     <p>
-                        <a href="#" title="Más información sobre las metodología">Más información</a>
+                        <a href="#" title="Más información sobre el profesorado" data-toggle="modal" data-target="#modalProfesores">Más información</a>
+                        <!--<a href="#" title="Más información sobre las metodología">Más información</a>-->
                     </p>
                 </div>
 
@@ -270,7 +279,7 @@
             <li> <a href="#">Premios</a> </li>
             <li> <a href="#">Bolsa de empleo</a> </li>
             <li> <a href="#">Datos legales</a> </li>
-        </ul>
+        </ul> 
 
         <p>
             <small>&copy; Graphic Designer. Todos los derechos reservados.</small>
@@ -279,7 +288,7 @@
     </footer>	
 
     <!-- Modal -->
-    <div id="miModal" class="modal fade" role="dialog">
+    <div id="modalAulas" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Contenido del modal -->
             <div class="modal-content">
@@ -299,9 +308,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-alert" data-dismiss="modal" onclick="hola();" >Borrar</button>
-                </div>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>                    
             </div>
         </div>
     </div>
