@@ -21,6 +21,23 @@
         <script>
             $(document).ready(function () {
                 //alert("AAA");
+                
+                    $(".modales").click(function () {                        
+                        
+                        $("#idTipoModal").val($(this).attr("data-tipo"));
+                        var tipo = $(this).attr("data-tipo");
+                         
+                         
+                         
+                        //alert("AAA");
+                        
+                            //Con $(this).val() cogemos el value del boton, lo concatenamos a #descrip para tener el id del campo oculto con
+                            //la descripcion correspondiente a esa fila. Cogemos el text de ese campo y lo añadimos al p del modal para visualizarlo
+                           // $("#descripcion").text($("#descrip" + $(this).val()).text());
+                           //$("#modalAulas").modal();
+                            
+                            
+                        });
 
 
             });
@@ -77,12 +94,9 @@
             </li>
 
             <li>
-                <a href="consultas.htm?opcion=cargar">Consultas</a>
+                <a href="consultas.htm?opcion=cargar">Contacto</a>
             </li>
-
-            <!--            <li>
-                            <a href="#">Preinscripciones</a>
-                        </li>-->
+            
         </ul>
     </nav>
 
@@ -94,7 +108,7 @@
         <section class="DatosCentro">
             <h1>Mucho más que un gran <br><span>centro de formación</span></h1>
 
-            <p>Aula VIP es un centro de formación de referencia en el mundo del diseño. Aportamos multitud de herramientas para que al finalizar tus estudios consigas cumplir tus sueños profesionales.</p>
+            <p>Aula VIP es un centro de formación de referencia en el mundo de la informática. Aportamos multitud de herramientas para que al finalizar tus estudios consigas cumplir tus sueños profesionales.</p>
 
             <!-- Lo siguiente es una fila de contenido con 2 columnas dentro -->
             <div class="Fila">	
@@ -104,11 +118,13 @@
                     <figure>
                         <img src="imagenes/aulas-3-0.jpg" alt="Aula con equipamiento informático">
                     </figure>
+                    
+                    <input type="text" id="idTipoModal"/>
 
                     <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación.</p>
                     <p>
-                        <a href="#" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" data-target="#modalAulas">Más información</a>
-                        <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#miModal">-->
+                        <a href="consultas.htm?opcion=modales&tipo=aulas" id="modIde" name="modIde" class="modales" data-tipo="ideas" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" >Más información</a>
+                        <button id="modIde" name="modIde" data-tipo="ideas" type="button" class="btn btn-info modales" data-toggle="modal" title="Más información sobre las aulas informáticas y aulas blancas">Más información</button>
                     </p>
                 </div>
 
