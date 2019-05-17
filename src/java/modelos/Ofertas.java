@@ -4,9 +4,10 @@ package modelos;
 public class Ofertas {
     
     private String id_oferta;
-    private String imagen;
+    private String imagenes;
     private String titulo;
     private String descripcion;
+    private String descuento;
 
     public String getId_oferta() {
         return id_oferta;
@@ -16,12 +17,12 @@ public class Ofertas {
         this.id_oferta = id_oferta;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getImagenes() {
+        return imagenes;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setImagenes(String imagenes) {
+        this.imagenes = imagenes;
     }
 
     public String getTitulo() {
@@ -39,6 +40,14 @@ public class Ofertas {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
+
+    public String getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(String descuento) {
+        this.descuento = descuento;
+    }   
+        
     
 }

@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 
 <html lang="es">
     <head>
@@ -20,27 +21,81 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
-                //alert("AAA");
-                
-                    $(".modales").click(function () {                        
-                        
-                        $("#idTipoModal").val($(this).attr("data-tipo"));
-                        var tipo = $(this).attr("data-tipo");
-                         
-                         
-                         
-                        //alert("AAA");
-                        
-                            //Con $(this).val() cogemos el value del boton, lo concatenamos a #descrip para tener el id del campo oculto con
-                            //la descripcion correspondiente a esa fila. Cogemos el text de ese campo y lo añadimos al p del modal para visualizarlo
-                           // $("#descripcion").text($("#descrip" + $(this).val()).text());
-                           //$("#modalAulas").modal();
-                            
-                            
-                        });
+
+                $(".modales").click(function () {
+
+                    $("#idTipoModal").val($(this).attr("data-tipo"));
+
+                    if (window.XMLHttpRequest) //mozilla
+                    {
+                        ajax = new XMLHttpRequest(); //No Internet explorer
+                    } else
+                    {
+                        ajax = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+
+                    //$("#idTipoModal").val($(this).attr("data-tipo"));
+
+                    tipo = $('#idTipoModal').val();
+
+                    alert(tipo);
+
+                    $.ajax({
+                        //Usamos GET ya que recibimos.
+                        type: 'GET',
+                        url: '/homeController/modales.htm?idTipo=' + tipo,
+                        success: function (data) {
+
+//                            //Recogemos los datos del combo y los pasamos a objetos Entidad  
+//                            var clienteEntidad = JSON.parse(data);
+//                            //Identificamos el combo
+//                            select = document.getElementById('comboClientes');
+//                            //Añadimos la opcion Seleccionar al combo
+//                            var opt = document.createElement('option');
+//                            opt.value = 0;
+//                            opt.innerHTML = "Seleccionar";
+//                            select.appendChild(opt);
+//
+//                            //Lo vamos cargando
+//                            clienteEntidad.forEach(function (valor, indice) {
+//                                //Cada objeto esta en String y lo pasmoa a Cliente
+//                                var clienteEntidad2 = JSON.parse(valor);
+//                                //Creamos las opciones del combo
+//                                var opt = document.createElement('option');
+//                                //Guardamos el id en el value de cada opcion
+//                                opt.value = clienteEntidad2.id_entidad;
+//                                //Guardamos el impuesto en el nombre de cada opcion
+//                                opt.innerHTML = clienteEntidad2.distinct_code;
+//                                //Añadimos la opcion
+//                                select.appendChild(opt);
+//                            });
+
+                        },
+                        error: function (xhr, ajaxOptions, thrownError) {
+                            console.log(xhr.status);
+                            console.log(xhr.responseText);
+                            console.log(thrownError);
+                        }
+                    });
 
 
-            });
+
+                    //var tipo = $(this).attr("data-tipo");  
+
+
+                    //Con $(this).val() cogemos el value del boton, lo concatenamos a #descrip para tener el id del campo oculto con
+                    //la descripcion correspondiente a esa fila. Cogemos el text de ese campo y lo añadimos al p del modal para visualizarlo
+                    // $("#descripcion").text($("#descrip" + $(this).val()).text());
+                    //$("#modalAulas").modal();
+
+
+                });
+            });         
+
+
+
+
+
         </script>
 
     </head>
@@ -82,7 +137,7 @@
             </li>
 
             <li>
-                <a href="#">Diseño gráfico</a>
+                <a href="profesores.htm?opcion=cargar">Profesores</a>
             </li>
 
             <li>
@@ -96,7 +151,7 @@
             <li>
                 <a href="consultas.htm?opcion=cargar">Contacto</a>
             </li>
-            
+
         </ul>
     </nav>
 
@@ -104,6 +159,8 @@
     <main>
 
         <!-- Sección qué ofrecemos-->
+
+        <input type="text" id="idTipoModal"/>
 
         <section class="DatosCentro">
             <h1>Mucho más que un gran <br><span>centro de formación</span></h1>
@@ -117,14 +174,13 @@
                     <p>8 aulas informáticas + 2 aulas blancas</p>
                     <figure>
                         <img src="imagenes/aulas-3-0.jpg" alt="Aula con equipamiento informático">
-                    </figure>
-                    
-                    <input type="text" id="idTipoModal"/>
+                    </figure>                   
 
                     <p>Todas nuestras aulas disfrutan de equipamiento informático de última generación.</p>
                     <p>
-                        <a href="consultas.htm?opcion=modales&tipo=aulas" id="modIde" name="modIde" class="modales" data-tipo="ideas" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" >Más información</a>
-                        <button id="modIde" name="modIde" data-tipo="ideas" type="button" class="btn btn-info modales" data-toggle="modal" title="Más información sobre las aulas informáticas y aulas blancas">Más información</button>
+                        <!--<a href="home.htm?opcion=modales&tipo=aulas" id="modIde" name="modIde" class="modales" data-tipo="ideas" title="Más información sobre las aulas informáticas y aulas blancas" data-toggle="modal" >Más información</a>-->
+                        <button id="modIde" name="modIde" data-tipo="ideas" type="button" class="modales btn btn-info modales" data-toggle="modal" data-target="#modalAulas"
+                                onclick="modal()" title="Más información sobre las aulas informáticas y aulas blancas" >Más información</button>
                     </p>
                 </div>
 
@@ -195,40 +251,40 @@
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
             <div class="Fila">	
                 <div class="Columna">
-                    <img id="oferta11" name="oferta11" src="imagenes/curso-dibujo-vectorial.svg" alt="">
-                    <h2 id="oferta12" name="oferta12">Adobe Photoshop</h2>
-                    <p  id="oferta13" name="oferta13">Aprende Photoshop desde cero y domina el mejor software de tratamiento, retoque y creación de imágenes digitales del mercado.</p>
+                    <img id="oferta11" name="oferta11" src="${listaOfertas[0].imagenes}" alt="">
+                    <h2 id="oferta12" name="oferta12">${listaOfertas[0].titulo}</h2>
+                    <p  id="oferta13" name="oferta13">${listaOfertas[0].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Ilustración digital">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>50%</b> de descuento</p>		
+                    <p class="descuento"><b>${listaOfertas[0].descuento}%</b> de descuento</p>		
                 </div>
 
                 <div class="Columna">
-                    <img id="oferta21" name="oferta21" src="imagenes/curso-maquetacion.svg" alt="">
+                    <img id="oferta21" name="oferta21" src="${listaOfertas[1].imagenes}" alt="">
 
-                    <h2 id="oferta22" name="oferta22">Bootstrap</h2>
-                    <p id="oferta23" name="oferta23">Aprende a crear cualquier sitio web adaptable a dispositivos móviles con el mejor framework de diseño web.</p>
+                    <h2 id="oferta22" name="oferta22">${listaOfertas[1].titulo}</h2>
+                    <p id="oferta23" name="oferta23">${listaOfertas[1].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Maquetación gráfica">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>70%</b> de descuento</p>
+                    <p class="descuento"><b>${listaOfertas[1].descuento}%</b> de descuento</p>
                 </div>
 
                 <div class="Columna">
-                    <img  id="oferta31" name="oferta31"src="imagenes/curso-edicion-video.svg" alt="">
-                    <h2 id="oferta32" name="oferta32">Animación 3D</h2>
-                    <p id="oferta33" name="oferta33">Aprende a diseñar, crear y desarrollar personajes en entornos 2D y 3D, y a darles vida a través de la animación.</p>
+                    <img  id="oferta31" name="oferta31"src="${listaOfertas[2].imagenes}" alt="">
+                    <h2 id="oferta32" name="oferta32">${listaOfertas[2].titulo}</h2>
+                    <p id="oferta33" name="oferta33">${listaOfertas[2].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de vídeo">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>20%</b> de descuento</p>
+                    <p class="descuento"><b>${listaOfertas[2].descuento}%</b> de descuento</p>
                 </div>
 
                 <div class="limpiar"></div>
@@ -239,41 +295,39 @@
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
             <div class="Fila">	
                 <div class="Columna">
-                    <img id="oferta41" name="oferta41" src="imagenes/curso-edicion-sonido.svg" alt="">
-                    <h2 id="oferta42" name="oferta42">Java Avanzado</h2>
-                    <p id="oferta43" name="oferta43">El curso te aportará los conocimientos necesarios para convertirte en un profesional del desarrollo de software.</p>
+                    <img id="oferta41" name="oferta41" src="${listaOfertas[3].imagenes}" alt="">
+                    <h2 id="oferta42" name="oferta42">${listaOfertas[3].titulo}</h2>
+                    <p id="oferta43" name="oferta43">${listaOfertas[3].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de audio ">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>50%</b> de descuento</p>
+                    <p class="descuento"><b>${listaOfertas[3].descuento}%</b> de descuento</p>
                 </div>
 
                 <div class="Columna">
-                    <img id="oferta51" name="oferta51" src="imagenes/curso-gestion-color.svg" alt="">
-                    <h2 id="oferta52" name="oferta52">Adobe Illustrator</h2>
-                    <p id="oferta53" name="oferta53">Aprende las técnicas y trucos de ilustración digital empleadas en publicidad y diseño gráfico con Illustrator.</p>
+                    <img id="oferta51" name="oferta51" src="${listaOfertas[4].imagenes}" alt="">
+                    <h2 id="oferta52" name="oferta52">${listaOfertas[4].titulo}</h2>
+                    <p id="oferta53" name="oferta53">${listaOfertas[4].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Gestión del color">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>40%</b> de descuento</p>
+                    <p class="descuento"><b>${listaOfertas[4].descuento}%</b> de descuento</p>
                 </div>
 
                 <div class="Columna">
-                    <img id="oferta61" name="oferta61" src="imagenes/curso-creatividad.svg" alt="">
-                    <h2 id="oferta62" name="oferta62">Inglés B1</h2>
-                    <p id="oferta63" name="oferta63">Aprenderá las competencias necesarias de la lengua inglesa, de forma que motive al alumno en el dominio de la misma.</p>
+                    <img id="oferta61" name="oferta61" src="${listaOfertas[5].imagenes}" alt="">
+                    <h2 id="oferta62" name="oferta62">${listaOfertas[5].titulo}</h2>
+                    <p id="oferta63" name="oferta63">${listaOfertas[5].descripcion}</p>
                     <p>
                         <a href="#" title="Más información del curso Técnicas Creativas">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento">
-                        <b>30%</b> de descuento
-                    </p>
+                    <p class="descuento"><b>${listaOfertas[5].descuento}%</b> de descuento</p>
                 </div>
 
                 <div class="limpiar"></div>
@@ -284,7 +338,7 @@
 
     </main>
 
-     <footer>
+    <footer>
         <ul>
             <li> <a href="#">Contacto</a> </li>
             <li> <a href="#">Imágenes del centro</a> </li>
@@ -316,7 +370,7 @@
 
                     <p id="textoModal" name="textoModal">Todas nuestras aulas disfrutan de equipamiento informático de última generación con Intel Core i7 8700 en Asus B150-C
                         y pantallas interactivas para la explicación docente, que permiten exponer la información de forma participativa.</p>
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>                    
