@@ -195,9 +195,9 @@
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
             <div class="Fila">	
                 <div class="Columna">
-                    <img src="imagenes/curso-dibujo-vectorial.svg" alt="">
-                    <h2>Adobe Photoshop</h2>
-                    <p>Aprende Photoshop desde cero y domina el mejor software de tratamiento, retoque y creación de imágenes digitales del mercado.</p>
+                    <img id="oferta11" name="oferta11" src="imagenes/curso-dibujo-vectorial.svg" alt="">
+                    <h2 id="oferta12" name="oferta12">Adobe Photoshop</h2>
+                    <p  id="oferta13" name="oferta13">Aprende Photoshop desde cero y domina el mejor software de tratamiento, retoque y creación de imágenes digitales del mercado.</p>
                     <p>
                         <a href="#" title="Más información del curso Ilustración digital">Me gusta este curso</a>
                     </p>
@@ -207,10 +207,10 @@
                 </div>
 
                 <div class="Columna">
-                    <img src="imagenes/curso-maquetacion.svg" alt="">
+                    <img id="oferta21" name="oferta21" src="imagenes/curso-maquetacion.svg" alt="">
 
-                    <h2>Bootstrap</h2>
-                    <p>Aprende a crear cualquier sitio web adaptable a dispositivos móviles con el mejor framework de diseño web.</p>
+                    <h2 id="oferta22" name="oferta22">Bootstrap</h2>
+                    <p id="oferta23" name="oferta23">Aprende a crear cualquier sitio web adaptable a dispositivos móviles con el mejor framework de diseño web.</p>
                     <p>
                         <a href="#" title="Más información del curso Maquetación gráfica">Me gusta este curso</a>
                     </p>
@@ -220,9 +220,9 @@
                 </div>
 
                 <div class="Columna">
-                    <img src="imagenes/curso-edicion-video.svg" alt="">
-                    <h2>Animación 3D</h2>
-                    <p>Aprende a diseñar, crear y desarrollar personajes en entornos 2D y 3D, y a darles vida a través de la animación.</p>
+                    <img  id="oferta31" name="oferta31"src="imagenes/curso-edicion-video.svg" alt="">
+                    <h2 id="oferta32" name="oferta32">Animación 3D</h2>
+                    <p id="oferta33" name="oferta33">Aprende a diseñar, crear y desarrollar personajes en entornos 2D y 3D, y a darles vida a través de la animación.</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de vídeo">Me gusta este curso</a>
                     </p>
@@ -239,9 +239,9 @@
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
             <div class="Fila">	
                 <div class="Columna">
-                    <img src="imagenes/curso-edicion-sonido.svg" alt="">
-                    <h2>Java Avanzado</h2>
-                    <p>El curso te aportará los conocimientos necesarios para convertirte en un profesional del desarrollo de software.</p>
+                    <img id="oferta41" name="oferta41" src="imagenes/curso-edicion-sonido.svg" alt="">
+                    <h2 id="oferta42" name="oferta42">Java Avanzado</h2>
+                    <p id="oferta43" name="oferta43">El curso te aportará los conocimientos necesarios para convertirte en un profesional del desarrollo de software.</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de audio ">Me gusta este curso</a>
                     </p>
@@ -251,9 +251,9 @@
                 </div>
 
                 <div class="Columna">
-                    <img src="imagenes/curso-gestion-color.svg" alt="">
-                    <h2>Adobe Illustrator</h2>
-                    <p>Aprende las técnicas y trucos de ilustración digital empleadas en publicidad y diseño gráfico con Illustrator.</p>
+                    <img id="oferta51" name="oferta51" src="imagenes/curso-gestion-color.svg" alt="">
+                    <h2 id="oferta52" name="oferta52">Adobe Illustrator</h2>
+                    <p id="oferta53" name="oferta53">Aprende las técnicas y trucos de ilustración digital empleadas en publicidad y diseño gráfico con Illustrator.</p>
                     <p>
                         <a href="#" title="Más información del curso Gestión del color">Me gusta este curso</a>
                     </p>
@@ -263,9 +263,9 @@
                 </div>
 
                 <div class="Columna">
-                    <img src="imagenes/curso-creatividad.svg" alt="">
-                    <h2>Inglés B1</h2>
-                    <p>Aprenderá las competencias necesarias de la lengua inglesa, de forma que motive al alumno en el dominio de la misma.</p>
+                    <img id="oferta61" name="oferta61" src="imagenes/curso-creatividad.svg" alt="">
+                    <h2 id="oferta62" name="oferta62">Inglés B1</h2>
+                    <p id="oferta63" name="oferta63">Aprenderá las competencias necesarias de la lengua inglesa, de forma que motive al alumno en el dominio de la misma.</p>
                     <p>
                         <a href="#" title="Más información del curso Técnicas Creativas">Me gusta este curso</a>
                     </p>
