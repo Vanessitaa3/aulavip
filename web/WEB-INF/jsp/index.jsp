@@ -190,14 +190,14 @@
 
         <section class="Cursos">
             <h1>Oferta de cursos<br><span>con descuentos</span></h1>
-            <p>Elige uno de nuestros cursos especializados en diseño y lánzate a un apasionante mundo profesional dentro del sector audiovisual y publicitario</p>
+            <p>Elige uno de nuestros cursos especializados en diseño y desarrollo y lánzate a un apasionante mundo profesional dentro del sector de la informática</p>
 
             <!-- Lo siguiente es una fila de contenido con 3 columnas dentro -->
             <div class="Fila">	
                 <div class="Columna">
                     <img src="imagenes/curso-dibujo-vectorial.svg" alt="">
-                    <h2>Ilustración digital</h2>
-                    <p>Aprende las técnicas y trucos de ilustración digital empleadas en publicidad y diseño gráfico con Illustrator.</p>
+                    <h2>Adobe Photoshop</h2>
+                    <p>Aprende Photoshop desde cero y domina el mejor software de tratamiento, retoque y creación de imágenes digitales del mercado.</p>
                     <p>
                         <a href="#" title="Más información del curso Ilustración digital">Me gusta este curso</a>
                     </p>
@@ -209,8 +209,8 @@
                 <div class="Columna">
                     <img src="imagenes/curso-maquetacion.svg" alt="">
 
-                    <h2>Maquetación gráfica</h2>
-                    <p>Conoce todos los ajustes de la composición de textos, imágenes, cómo numerar y manipular las páginas.</p>
+                    <h2>Bootstrap</h2>
+                    <p>Aprende a crear cualquier sitio web adaptable a dispositivos móviles con el mejor framework de diseño web.</p>
                     <p>
                         <a href="#" title="Más información del curso Maquetación gráfica">Me gusta este curso</a>
                     </p>
@@ -221,8 +221,8 @@
 
                 <div class="Columna">
                     <img src="imagenes/curso-edicion-video.svg" alt="">
-                    <h2>Edición de vídeo</h2>
-                    <p>Descubre en este curso los secretos para sincronizar y editar con rapidez cualquier de clip de vídeo.</p>
+                    <h2>Animación 3D</h2>
+                    <p>Aprende a diseñar, crear y desarrollar personajes en entornos 2D y 3D, y a darles vida a través de la animación.</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de vídeo">Me gusta este curso</a>
                     </p>
@@ -240,8 +240,8 @@
             <div class="Fila">	
                 <div class="Columna">
                     <img src="imagenes/curso-edicion-sonido.svg" alt="">
-                    <h2>Edición de audio</h2>
-                    <p>Si tu pasión es la música, con este curso podrás dedicarte de manera profesional en la edición de sonido.</p>
+                    <h2>Java Avanzado</h2>
+                    <p>El curso te aportará los conocimientos necesarios para convertirte en un profesional del desarrollo de software.</p>
                     <p>
                         <a href="#" title="Más información del curso Edición de audio ">Me gusta este curso</a>
                     </p>
@@ -252,20 +252,20 @@
 
                 <div class="Columna">
                     <img src="imagenes/curso-gestion-color.svg" alt="">
-                    <h2>Gestión del color</h2>
-                    <p>Dominarás las herramientas para controlar el color digital en todos los dispositivos del flujo de trabajo.</p>
+                    <h2>Adobe Illustrator</h2>
+                    <p>Aprende las técnicas y trucos de ilustración digital empleadas en publicidad y diseño gráfico con Illustrator.</p>
                     <p>
                         <a href="#" title="Más información del curso Gestión del color">Me gusta este curso</a>
                     </p>
 
                     <!-- descuento: -->
-                    <p class="descuento"><b>70%</b> de descuento</p>
+                    <p class="descuento"><b>40%</b> de descuento</p>
                 </div>
 
                 <div class="Columna">
                     <img src="imagenes/curso-creatividad.svg" alt="">
-                    <h2>Técnicas creativas</h2>
-                    <p>Habilidades para crear conceptos creativos originales y diferenciadores que necesitas para trabajar en publicidad.</p>
+                    <h2>Inglés B1</h2>
+                    <p>Aprenderá las competencias necesarias de la lengua inglesa, de forma que motive al alumno en el dominio de la misma.</p>
                     <p>
                         <a href="#" title="Más información del curso Técnicas Creativas">Me gusta este curso</a>
                     </p>
@@ -284,7 +284,7 @@
 
     </main>
 
-    <footer>
+     <footer>
         <ul>
             <li> <a href="#">Contacto</a> </li>
             <li> <a href="#">Imágenes del centro</a> </li>
@@ -294,10 +294,10 @@
         </ul> 
 
         <p>
-            <small>&copy; Graphic Designer. Todos los derechos reservados.</small>
+            <small>&copy; Aula VIP. Todos los derechos reservados.</small>
         </p>
 
-    </footer>	
+    </footer>
 
     <!-- Modal Aulas-->
     <div id="modalAulas" class="modal fade" role="dialog">
