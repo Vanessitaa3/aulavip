@@ -78,7 +78,7 @@
             </li>
 
             <li>
-                <a href="#">Desarrollo web</a>
+                <a href="cursos.htm?opcion=cargar">Cursos</a>
             </li>
 
             <li>

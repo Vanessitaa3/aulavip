@@ -10,6 +10,8 @@ public class HomeController extends MultiActionController {
 
     public ModelAndView cargar(HttpServletRequest request, HttpServletResponse response) throws Exception, ServletException {
         ModelAndView mv = new ModelAndView("home");
+        
+        
 
         return mv;
     }
